@@ -54,5 +54,10 @@ public class TaskServiceImpl implements TaskService {
 		return resultBean;
 	}
 
+	@Override
+	public Task getTaskByTId(Long tId) {
+		return taskMapper.selectByPrimaryKey(tId);
+	}
+
 
 }

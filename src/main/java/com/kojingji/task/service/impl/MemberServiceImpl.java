@@ -8,7 +8,7 @@ import com.kojingji.task.models.Member;
 import com.kojingji.task.service.intf.MemberService;
 
 
-@Service("memberService")
+@Service
 public class MemberServiceImpl implements MemberService {
 	@Autowired
     private MemberMapper memberMapper;

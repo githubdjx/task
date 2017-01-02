@@ -1,5 +1,7 @@
 package com.kojingji.task.dao;
 
+import java.util.Map;
+
 import com.kojingji.task.models.Registration;
 
 public interface RegistrationMapper {
@@ -39,4 +41,6 @@ public interface RegistrationMapper {
 	 * @mbggenerated  Tue Oct 04 23:02:17 CST 2016
 	 */
 	int updateByPrimaryKey(Registration record);
+
+	Registration selectByQqIdAndCid(Map<String, Object> paramMap);
 }
